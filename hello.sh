@@ -1,1 +1,3 @@
-sudo echo Hello cedrick777!
+#! /bin/bash
+
+echo Hello cedrick777!
