@@ -1,1 +1,1 @@
-echo Hello cedrick777!
+sudo echo Hello cedrick777!
