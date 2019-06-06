@@ -1,0 +1,5 @@
+ls -la
+ls -lA
+ls -m
+ls -tc
+ls -p
