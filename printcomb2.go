@@ -2,9 +2,6 @@ package piscine
 
 import "fmt"
 
-func main() {
-	
-}
 func PrintComb2() {
 	for a := 0; a <= 9; a++ {
 		for s := 0; s <= 8; s++ {
