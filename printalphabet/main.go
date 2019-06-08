@@ -1,6 +1,6 @@
 package main
 
-import "github.com/01-edu/z01"
+import "fmt"
 
 func main() {
 	fmt.PrintLn("abcdefghijklmnopqrst")
