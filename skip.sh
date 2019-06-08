@@ -1,1 +1,1 @@
-ls -l | sed -n '1~3p'
+ls -l | sed -n '2~2p'
