@@ -2,10 +2,14 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func affichage(n int, tab [9]int, max [9]int) {
+func print(i int) {
+	z01.PrintRune(rune(i) + '0')
+}
+
+func show(n int, tab [9]int, max [9]int) {
 	i := 0
 	for i < n {
-		z01.PrintRune(rune(tab[i]) + '0')
+		print(tab[i])
 		i++
 	}
 	if tab[0] != max[0] {
@@ -14,11 +18,11 @@ func affichage(n int, tab [9]int, max [9]int) {
 	}
 }
 
-func combinaison() {
+func combinaison1() {
 	tab := [9]int{0}
 	max := [9]int{9}
 	for tab[0] <= max[0] {
-		affichage(1, tab, max)
+		show(1, tab, max)
 		tab[0]++
 	}
 }
@@ -28,7 +32,7 @@ func PrintCombN(n int) {
 	max := [9]int{}
 
 	if n == 1 {
-		combinaison()
+		combinaison1()
 	} else {
 		i := n - 1
 		j := 9
@@ -40,12 +44,12 @@ func PrintCombN(n int) {
 		i = n - 1
 		for tab[0] < max[0] {
 			if tab[i] != max[i] {
-				affichage(n, tab, max)
+				show(n, tab, max)
 				tab[i]++
 			}
 			if tab[i] == max[i] {
 				if tab[i-1] != max[i-1] {
-					affichage(n, tab, max)
+					show(n, tab, max)
 					tab[i-1]++
 					j = i
 					for j < n {
@@ -59,7 +63,7 @@ func PrintCombN(n int) {
 				i--
 			}
 		}
-		affichage(n, tab, max)
+		show(n, tab, max)
 	}
 	z01.PrintRune('\n')
 }
