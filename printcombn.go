@@ -9,7 +9,8 @@ func affichage(n int, tab [9]int, max [9]int) {
 		i++
 	}
 	if tab[0] != max[0] {
-		z01.PrintRune(', ')
+		z01.PrintRune(',')
+		z01.PrintRune(' ')
 	}
 }
 
