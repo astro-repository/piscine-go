@@ -27,7 +27,7 @@ func PrintCombN(n int) {
 	max := [9]int{}
 
 	if n == 1 {
-		combinaison1()
+		combinaison()
 	} else {
 		i := n - 1
 		j := 9
