@@ -3,5 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("zyxwvutsrqponmlkjihgfedcba")
+	var index rune
+	index = 122
+	for 97 <= index {
+		fmt.Printf("%c", index)
+		index--
+	}
+	print("\n")
 }
