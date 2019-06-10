@@ -8,43 +8,43 @@ func Raid1b(x,y int){
 			if x==1 && y!=1 {
 				for j := 1; j <= y; j++ {
 					if j==1 {
-						print("/")
+						fmt.Print("/")
 					}else if j==y {
-						print("\n\\\n")
+						fmt.Print("\n\\\n")
 					}else if j!=1 && j!=y {
-						print("\n*")
+						fmt.Print("\n*")
 					}
 				}
 				break
 			}else if y==1 && x!=1 {
 				for j := 1; j <= x; j++ {
 					if j==1 {
-						print("/")
+						fmt.Print("/")
 					}else if j==x {
-						print("\\\n")
+						fmt.Print("\\\n")
 					}else if j!=1 && j!=y {
-						print("*")
+						fmt.Print("*")
 					}
 				}
 				break
 			}else{
 				for j := 1; j <= x; j++ {
 					if (i==1 && j==1) || (i==y && j==x)  {
-						print("/")
+						fmt.Print("/")
 					}else if (i==1&&j==x) || (i==y && j==1) {
-						print("\\")
+						fmt.Print("\\")
 					}else if (i==1 && (j!=1 || j!=x)) || (i==y && (j!=x || j!=x)) {
-						print("*")
+						fmt.Print("*")
 					}else if (i!=1 && j==1) {
-						print("*")
+						fmt.Print("*")
 					}else if (i!=y && j==x){
-						print("*")
+						fmt.Print("*")
 					}else{
-						print(" ")
+						fmt.Print(" ")
 					}
 				}
 			}
-			print("\n")
+			fmt.Print("\n")
 		}
 	}
 }

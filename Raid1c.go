@@ -11,13 +11,13 @@ func Raid1c(x,y int){
 				for j := 1; j <= y; j++ {
 
 					if j==1 {
-						print("A")
+						fmt.Print("A")
 					}else if j==y {
-						print("C")
+						fmt.Print("C")
 					}else if j!=1 && j!=y {
-						print("B")
+						fmt.Print("B")
 					}
-					print("\n")
+					fmt.Print("\n")
 				}
 				break
 			}else{
@@ -26,16 +26,16 @@ func Raid1c(x,y int){
 				//colonne x
 				
 				if (i==1 && j==1) || (i==1 && x==j) {
-					print("A")
+					fmt.Print("A")
 				}else if (i==y && j==1) || (i==y && j==x) {
-					print("C")
+					fmt.Print("C")
 				}else if (i==1 && (j!=1 || j!=x)) || (i==y && (j!=1 || j!=x)) || (j==1 && (i!=1 || i==y)) || (j==x && (i!=1 || i!=y)){
-					print("B")
+					fmt.Print("B")
 				}else{
-					print(" ")
+					fmt.Print(" ")
 				}
 			}
-			print("\n")
+			fmt.Print("\n")
 		}
 	}
 }

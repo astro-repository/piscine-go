@@ -11,24 +11,24 @@ func Raid1e(x,y int){
 				for j := 1; j <= y; j++ {
 
 					if j==1 {
-						print("A")
+						fmt.Print("A")
 					}else if j==y {
-						print("\nC")
+						fmt.Print("\nC")
 					}else if j!=1 && j!=y {
-						print("\nB")
+						fmt.Print("\nB")
 					}
 				}
 				break
 			}else if y==1 && x!=1 {
 				for j := 1; j <= x; j++ {
 					if j==1 {
-						print("A")
+						fmt.Print("A")
 					}else if j==y {
-						print("C")
+						fmt.Print("C")
 					}else if j!=1 && j!=x {
-						print("B")
+						fmt.Print("B")
 					}else{
-						print("C")
+						fmt.Print("C")
 					}
 				}
 				break
@@ -38,21 +38,21 @@ func Raid1e(x,y int){
 				//colonne x
 				
 				if (i==1 && j==1) || (i==y && j==x)  {
-					print("A")
+					fmt.Print("A")
 				}else if (i==1&&j==x) || (i==y && j==1) {
-					print("C")
+					fmt.Print("C")
 				}else if (i==1 && (j!=1 || j!=x)) || (i==y && (j!=x || j!=x)) {
-					print("B")
+					fmt.Print("B")
 				}else if (i!=1 && j==1) {
-					print("\nB")
+					fmt.Print("\nB")
 				}else if (i!=y && j==x){
-					print("B\n")
+					fmt.Print("B\n")
 				}else{
-					print(" ")
+					fmt.Print(" ")
 				}
 			}
 		}
 	}
-	print("\n")
+	fmt.Print("\n")
 }
 }

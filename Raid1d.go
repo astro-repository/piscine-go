@@ -10,20 +10,20 @@ func Raid1d(x,y int){
 			for j := 1; j <= x; j++ {
 				//colonne x
 				if (i==1 && j==1) || (i==y && j==1)  {
-					print("A")
+					fmt.Print("A")
 				}else if (i==1&&j==x) ||  (i==y && j==x){
-					print("C")
+					fmt.Print("C")
 				}else if (i==1 && (j!=1 || j!=x)) || (i==y && (j!=x || j!=x)) {
-					print("B")
+					fmt.Print("B")
 				}else if (i!=1 && j==1) {
-					print("B")
+					fmt.Print("B")
 				}else if (i!=y && j==x){
-					print("B")
+					fmt.Print("B")
 				}else{
-					print(" ")
+					fmt.Print(" ")
 				}
 			}
-			print("\n")
+			fmt.Print("\n")
 		}
 	}
 }
