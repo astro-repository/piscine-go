@@ -1,11 +1,14 @@
 package piscine
 
 import "github.com/01-edu/z01"
+import "fmt"
 
 func main() {
-	var lettre rune 
-	for index := 1; index < 26; index++ {
+	var index rune
+	index = 97
+	for index <= 122 {
 		z01.PrintRune(index)
+		index++
 	}
 	print("\n")
 }
