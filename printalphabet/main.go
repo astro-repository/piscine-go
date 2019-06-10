@@ -1,12 +1,12 @@
 package piscine
 
-import "github.com/01-edu/z01"
+import "fmt"
 
 func main() {
 	var index rune
 	index = 97
 	for index <= 122 {
-		z01.PrintRune(index)
+		fmt.Printf("%c", index)
 		index++
 	}
 	print("\n")
