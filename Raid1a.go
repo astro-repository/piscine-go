@@ -1,8 +1,8 @@
-package main
+package piscine
 
 import (
 	"fmt"
-	piscine "./student"
+	student "./student"
 )
 
 func Raid1a(x,y int){
