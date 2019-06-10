@@ -1,10 +1,11 @@
-package main
+package piscine
 
-func main(){
-	Raid1a(1,5)
-}
+import (
+	"fmt"
+	student "./student"
+)
 
-func Raid1a(x,y int){
+func Raid1b(x,y int){
 	for i := 1; i <= y; i++ {
 		if x==1 && y!=1 {
 			for j := 1; j <= y; j++ {
