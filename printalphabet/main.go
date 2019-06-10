@@ -1,7 +1,8 @@
-package main
-
-import "fmt"
+package piscine
 
 func main() {
-	fmt.Println("abcdefghijklmnopqrstuvwxyz")
+	for i := 97; i <= 122; i++ {
+		z01.PrintRune(i)
+	}
+	print("\n")
 }
