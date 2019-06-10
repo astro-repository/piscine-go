@@ -1,7 +1,5 @@
 package piscine
 
-import "fmt"
-
 func Raid1d(x,y int){
 	for i := 1; i <= y; i++ {
 		//ligne y

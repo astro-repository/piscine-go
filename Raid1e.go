@@ -1,7 +1,5 @@
 package piscine
 
-import "fmt"
-
 func Raid1e(x,y int){
 	for i := 1; i <= y; i++ {
 		if x==1 && y!=1{
