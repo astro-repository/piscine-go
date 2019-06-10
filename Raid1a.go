@@ -1,4 +1,10 @@
-package piscine
+package main
+
+import "fmt"
+
+func main(){
+	Raid1a(12,20)
+}
 
 func Raid1a(x,y int){
 	for i := 1; i <= y; i++ {
@@ -6,25 +12,25 @@ func Raid1a(x,y int){
 		for j := 1; j <= y; j++ {
 
 			if j==1 || j==y {
-				print("o\n")
+				fmt.Print("o\n")
 			}else if j!=1 && j!=y {
-				print("|\n")
+				fmt.Print("|\n")
 			}
 		}
 		break
 		}else{
 			for j := 1; j <= x; j++ {
 				if (i==1 && j==1) || (i==1&&j==x) || (i==y && j==1) || (i==y && j==x)  {
-					print("o")
+					fmt.Print("o")
 				}else if (i==1 && (j!=1 || j!=x)) || (i==y && (j!=x || j!=x)) {
-					print("-")
+					fmt.Print("-")
 				}else if (i!=1 && j==1) || (i!=y && j==x){
-					print("|")
+					fmt.Print("|")
 				}else{
-					print(" ")
+					fmt.Print(" ")
 				}
 			}
 		}
-		print("\n")
+		fmt.Print("\n")
 	}
 }
