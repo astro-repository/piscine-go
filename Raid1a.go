@@ -1,10 +1,6 @@
-package main
+package piscine
 
 import "fmt"
-
-func main(){
-	Raid1a(-1,6)
-}
 
 func Raid1a(x,y int){
 
