@@ -1,9 +1,6 @@
 package piscine
 
-import (
-	"fmt"
-	student "./student"
-)
+import "fmt"
 
 func Raid1e(x,y int){
 	for i := 1; i <= y; i++ {
