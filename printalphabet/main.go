@@ -1,6 +1,6 @@
 package piscine
 
-import "z01"
+import "github.com/01-edu/z01"
 
 func main() {
 	var lettre rune 
