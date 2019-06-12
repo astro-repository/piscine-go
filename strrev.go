@@ -1,7 +1,5 @@
 package piscine
 
-import "fmt"
-
 func StrRev(s string) string{
 	secondTableau := []byte(s)
 	longueur := len(s) - 1

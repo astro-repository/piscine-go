@@ -1,6 +1,5 @@
 package piscine
 
-import "fmt"
 import "math"
 
 func BasicAtoi(s string) int{
