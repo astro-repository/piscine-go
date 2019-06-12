@@ -3,19 +3,24 @@ package piscine
 import "math"
 
 func Atoi(s string) int{
-	NombreIdentique := []byte(s)
-	if NombreIdentique[0] == 43 && NombreIdentique[1] != 43 {
-		NombreIdentique[0] = '0'
-		retour := AToi(string(NombreIdentique))
-		return retour
-	}else if NombreIdentique[0] == 45 && NombreIdentique[1]!= 45 {
-		NombreIdentique[0] = '0'
-		retour := AToi(string(NombreIdentique))
-		return -1 * retour
-	}else{
-		retour := AToi(s)
-		return retour
-	}
+  NombreIdentique := []byte(s)
+  if len(NombreIdentique)>1{
+    if NombreIdentique[0] == 43 && NombreIdentique[1] != 43 {
+		  NombreIdentique[0] = '0'
+	  	retour := AToi(string(NombreIdentique))
+	  	return retour
+  	}else if NombreIdentique[0] == 45 && NombreIdentique[1]!= 45 {
+  		NombreIdentique[0] = '0'
+	  	retour := AToi(string(NombreIdentique))
+  		return -1 * retour
+  	}else{
+	  	retour := AToi(s)
+	  	return retour
+  	}
+  }else{
+    retour := AToi(s)
+	  return retour
+  }
 }
 
 func AToi(s string) int{
