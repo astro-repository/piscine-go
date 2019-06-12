@@ -6,19 +6,19 @@ func Atoi(s string) int{
 	NombreIdentique := []byte(s)
 	if NombreIdentique[0] == 43 && NombreIdentique[1] != 43 {
 		NombreIdentique[0] = '0'
-		retour := atoi(string(NombreIdentique))
+		retour := AToi(string(NombreIdentique))
 		return retour
 	}else if NombreIdentique[0] == 45 && NombreIdentique[1]!= 45 {
 		NombreIdentique[0] = '0'
-		retour := atoi(string(NombreIdentique))
+		retour := AToi(string(NombreIdentique))
 		return -1 * retour
 	}else{
-		retour := atoi(s)
+		retour := AToi(s)
 		return retour
 	}
 }
 
-func atoi(s string) int{
+func AToi(s string) int{
 	NombreIdentique := []byte(s)
 
 	for i, _ := range NombreIdentique {
@@ -38,7 +38,6 @@ func atoi(s string) int{
 				return int(0)
 			}
 		}
-	
 	}
 	entier := 0
 	longueur := len(NombreIdentique) - 1
