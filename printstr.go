@@ -7,5 +7,5 @@ func PrintStr(a string) {
 	for _, v := range a {
 		fmt.Print(string(v))
 	}
-	fmt.Println()
+	fmt.Print("\n")
 }
