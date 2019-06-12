@@ -11,7 +11,6 @@ func Atoi(s string) int{
 	}else if NombreIdentique[0] == 45 && NombreIdentique[1]!= 45 {
 		NombreIdentique[0] = '0'
 		retour := atoi(string(NombreIdentique))
-		fmt.Println("Ok")
 		return -1 * retour
 	}else{
 		retour := atoi(s)
