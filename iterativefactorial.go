@@ -13,5 +13,8 @@ func IterativeFactorial(nb int) int {
 				factoriel *= i
 			}
 		}
+		if nb<0{
+			return 0
+		}
 		return factoriel
 }
