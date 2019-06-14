@@ -1,9 +1,10 @@
 package piscine
 
 func Index(s, toFind string) int {
+
 	runeTab := []rune(s)
 	runeFind := []rune(toFind)
-	compteur := 0
+	index := -1
 	
 	for i := 0; i < len(runeTab); i++ {
 
@@ -26,13 +27,9 @@ func Index(s, toFind string) int {
 		}
 
 		if juge {
-			compteur++
-			i--
+			index=i
+			return index - len(runeFind)
 		}
 	}
-	if compteur != 0 {
-		return compteur
-	}else{
-		return -1
-	}
+	return -1
 }
