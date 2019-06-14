@@ -1,10 +1,4 @@
-package main
-
-func main()  {
-	fmt.Println(ToLower("Hello!"))
-	fmt.Println(ToLower("Salut!"))
-	fmt.Println(ToLower("Ola!"))
-}
+package piscine
 
 func ToLower(s string) string {
 	sRune := []rune(s)
