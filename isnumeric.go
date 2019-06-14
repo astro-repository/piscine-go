@@ -1,6 +1,6 @@
 package piscine
 
-func IsAlpha(s string) bool {
+func IsNumeric(s string) bool {
 	sRune := []rune(s)
 	for _, v := range sRune {
 		if !(v >= 48 && v <= 57) {
