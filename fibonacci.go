@@ -1,9 +1,14 @@
-package piscine
+package main
+
+import "fmt"
+
+func main()  {
+	arg1 := 25
+	fmt.Println(Fibonacci(arg1))
+}
 
 func Fibonacci(arg1 int) int{
-	if arg1 == 1{
-		return 0
-	}else if arg1 == 2{
+	if arg1 == 1 || arg1 == 2 {
 		return 1
 	}else if arg1 < 0{
 		return -1
