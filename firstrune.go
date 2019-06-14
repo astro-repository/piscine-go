@@ -1,4 +1,4 @@
-package student
+package displaya
 
 func FirstRune(s string) rune {
 	runeTab := []rune(s)
