@@ -1,7 +1,9 @@
 package piscine
 
+import "math"
+
 func RecursiveFactorial(nb int) int {
-	if nb < 0 {
+	if nb < 0 || nb >= math.MaxInt32 {
 		return 0
 	}else if nb == 0 {
 		return 1
