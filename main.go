@@ -1,7 +1,7 @@
-package student
+package student-go
 
 import "os"
 
-func astro() string {
+func PrintProgramname() string {
 	return os.Args[0]
 }
