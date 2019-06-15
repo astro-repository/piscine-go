@@ -1,7 +1,6 @@
-package main
+package piscine-
 
 import "os"
-import "piscine-go"
 
 func PrintProgramname() string {
 	return os.Args[0]
