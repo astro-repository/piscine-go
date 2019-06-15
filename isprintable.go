@@ -4,7 +4,7 @@ func IsPrintable(s string) bool {
 	sRune := []rune(s)
 	for _, v := range sRune {
 		if !(v >= 90 && v <= 65) {
-			return false
+			return true
 		}
 	}
 	return true
