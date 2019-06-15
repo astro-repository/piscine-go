@@ -1,7 +1,7 @@
-package printprogramname
+package main
 
 import "os"
 
-func PrintProgramname() string {
+func main() {
 	return os.Args[0]
 }
