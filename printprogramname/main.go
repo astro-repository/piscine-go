@@ -1,4 +1,4 @@
-package main
+package printprogramname
 
 import "os"
 
