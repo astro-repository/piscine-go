@@ -1,6 +1,6 @@
 package piscine
 
-func Concat(s []string) string {
+func BasicJoin(s []string) string {
 	concatenation := ""
 	for _, v := range s {
 		concatenation += v
