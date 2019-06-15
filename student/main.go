@@ -1,4 +1,4 @@
-package displaya
+package piscine-go
 
 import "os"
 
