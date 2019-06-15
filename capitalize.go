@@ -10,11 +10,11 @@ func Capitalize(s string) string {
 
 	for i := 1; i < len(sRune); i++ {
 		if ((sRune[i] >= 97 && sRune[i] <= 122) || (90 <= sRune[i] && sRune[i] >= 65)) && (97 <= sRune[i-1] && sRune[i-1] <= 122) && (65 <= sRune[i-1] && sRune[i-1] <= 90) {
-			sRune[i] = sRune[i]
+			continue
 		}else if (sRune[i] >= 97 && sRune[i] <= 122) && !(97 <= sRune[i-1] && sRune[i-1] <= 122) && !(65 <= sRune[i-1] && sRune[i-1] <= 90) && !(48 <= sRune[i-1] && sRune[i-1] <= 57){
 			sRune[i] = sRune[i] - distance
-		}else {
-			sRune[i] = sRune[i]
+		}else if ((97 <= sRune[i-1] && sRune[i-1] <= 122) || (65 <= sRune[i-1] && sRune[i-1] <= 90)) && (sRune[i] >= 65 && sRune[i] <= 90){
+			sRune[i] = sRune[i] + distance
 		}
 		k++
 	}
