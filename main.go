@@ -1,7 +1,7 @@
-package displaya
+package student
 
 import "os"
 
-func PrintProgramname() string {
+func astro() string {
 	return os.Args[0]
 }
