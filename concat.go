@@ -1,5 +1,5 @@
 package piscine
 
-func IsPrintable(s, S string) string {
+func Concat(s, S string) string {
 	return s+S
 }
