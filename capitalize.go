@@ -3,7 +3,6 @@ package piscine
 func Capitalize(s string) string {
 	sRune := []rune(s)
 	distance := 'a' - 'A'
-	k:=1
 	if (sRune[0] >= 97 && sRune[0] <= 122 ) {
 		sRune[0] = sRune[0] - distance
 	}
@@ -16,7 +15,6 @@ func Capitalize(s string) string {
 		}else if ((97 <= sRune[i-1] && sRune[i-1] <= 122) || (65 <= sRune[i-1] && sRune[i-1] <= 90)) && (sRune[i] >= 65 && sRune[i] <= 90){
 			sRune[i] = sRune[i] + distance
 		}
-		k++
 	}
 	
 	return string(sRune)
