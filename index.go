@@ -1,5 +1,7 @@
 package piscine
 
+import "math"
+
 func Index(s, toFind string) int {
 
 	runeTab := []rune(s)
