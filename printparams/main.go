@@ -4,7 +4,7 @@ import "os"
 import "fmt"
 
 func main() {
-	for _, v := range os.Args {
+	for i := 0; i < len(os.Args); i++ {
 		fmt.Println(v)
 	}
 }
