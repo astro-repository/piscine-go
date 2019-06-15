@@ -1,7 +1,8 @@
 package main
 
 import "os"
+import "fmt"
 
 func main() {
-	return os.Args[1]
+	fmt.Print(os.Args[0])
 }
