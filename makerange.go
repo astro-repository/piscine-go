@@ -18,7 +18,6 @@
 package piscine
 
 import (
-	"fmt"
 	"math"
 )
 
