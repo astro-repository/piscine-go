@@ -21,7 +21,7 @@ import (
 	"math"
 )
 
-func AppendRange(min, max int) []int {
+func MakeRange(min, max int) []int {
 	if max - min < 0 {
 		return nil
 	}
