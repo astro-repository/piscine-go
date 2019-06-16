@@ -16,15 +16,7 @@
 +	GITHUB : github.com/cedrick777				+						+
 + +++++++++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++*/
 
-package main
-
-import "fmt"
-
-func main() {
-	fmt.Println(AppendRange(4900,5000))
-	fmt.Println(AppendRange(10, 5))
-	fmt.Println(AppendRange(0, 0))
-}
+package piscine
 
 func AppendRange(min, max int) []int {
 	if min>max {
