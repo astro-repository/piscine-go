@@ -12,6 +12,8 @@
 '---------------------------------------'-----------*/
 package piscine
 
+import "fmt"
+
 func main()  {
 	PrintWordsTables([]string{"Hello", "how", "are", "you?"})
 }
