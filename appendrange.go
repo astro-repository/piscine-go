@@ -15,7 +15,6 @@
 +	QUEST 06 : sortparams						+						+
 +	GITHUB : github.com/cedrick777				+						+
 + +++++++++++++++++++++++++++++++++++++++++++++ +++++++++++++++++++++++*/
-
 package piscine
 
 func AppendRange(min, max int) []int {
