@@ -12,7 +12,7 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++						+
 +	NOM : TOURE 								+						+
 +	PRENOMS : Ahmed Christian Cédrick			+						+
-+	QUEST 06 : sortparams						+						+
++	QUEST 07 : appendrange.go					+						+
 +	GITHUB : github.com/cedrick777				+						+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 package piscine
