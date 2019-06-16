@@ -30,7 +30,7 @@ func main() {
 		}
 		Decompte--
 	}
-	for _, v := range os.Args {
-		fmt.Println(v)
+	for i := 1; i < len(os.Args)-1; i++ {
+		fmt.Println(os.Args[i])
 	}
 }
