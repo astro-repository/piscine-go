@@ -22,7 +22,9 @@ func SplitWhiteSpaces(texte string) []string {
 		}else if string(v) != " " && string(v) != "	" && string(v) != "\n" {
 			TexteToString += string(v)
 		}else{
-			tableau = append(tableau, TexteToString)
+			if len(TexteToString)>=1{
+				tableau = append(tableau, TexteToString)
+			}
 			TexteToString = ""
 		}
 	}
