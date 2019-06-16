@@ -22,7 +22,7 @@ import (
 )
 
 func MakeRange(min, max int) []int {
-	if max - min < 0 {
+	if max - min <= 0 {
 		return nil
 	}
 	tableau := make([]int, max-min)
