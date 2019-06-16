@@ -15,7 +15,7 @@
 +	QUEST 06 : sortparams						+						+
 +	GITHUB : github.com/cedrick777				+						+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-package main
+package piscine
 
 import (
 	"fmt"
