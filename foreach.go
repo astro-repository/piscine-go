@@ -16,10 +16,6 @@ import (
 	"fmt"
 )
 
-func main() {
-	arr := []int {1,2,3,4,5,6,7,8,9}
-	ForEach()
-}
 func ForEach(f func(int), arr []int) {
 	for _, v := range arr {
 		f(v)
