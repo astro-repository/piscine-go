@@ -10,7 +10,7 @@
 |  NOM : TOURE Ahmed Christian Cédrick  |           |
 |  QUEST 02 : printcombn                |           |
 '---------------------------------------'----------*/
-package main
+package piscine
 
 import (
 	"fmt"
