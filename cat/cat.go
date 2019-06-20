@@ -27,6 +27,7 @@ func main() {
         file, err := os.Open(v)
         if err != nil {
           fmt.Println(err)
+          return
         }else{
           data := make([]byte,443)
           file.Read(data)
