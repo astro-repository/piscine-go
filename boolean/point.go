@@ -14,24 +14,22 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
-func isEven(nbr int) bool {
-	if nbr%2 == 0 {
-		return true
-	} else {
-		return false
-	}
+type point struct {
+	x int
+	y int
+}
+
+func setPoint(ptr *point) {
+	ptr.x = 42
+	ptr.y = 21
 }
 
 func main() {
-	EvenMsg := "I have an even number of arguments"
-	OddMsg := "I have an odd number of arguments"
-	lengthOfArg := len(os.Args[1:])
-	if isEven(lengthOfArg) {
-		fmt.Println(EvenMsg)
-	} else {
-		fmt.Println(OddMsg)
-	}
+	points := &point{}
+
+	setPoint(points)
+
+	fmt.Printf("x = %d, y = %d\n",points.x, points.y)
 }
