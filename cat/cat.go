@@ -19,7 +19,7 @@ import (
 
 func main() {
   if len(os.Args)==1 {
-    fmt.Println("Hello\nHello")
+    return
   }else{
     os.Args = os.Args[1:]
     
