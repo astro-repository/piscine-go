@@ -1,3 +1,15 @@
+/*--------------------------------------------------.
+|     **      ******  ********  *******     ****    |
+|  **    **  *.          **     **   **   **    **  |
+|  **    **     ***.     **     ** ***    **    **  |
+|  ********  *      *    **     **   **   **    **  |
+|  **    **   ******     **     **   **     ****    |
+|---------------------------------------.           |
+|          ZONE-01 (cedrick777)         |           |
+|---------------------------------------|           |
+|  NOM : TOURE Ahmed Christian Cédrick  |           |
+|  QUEST 02 : printcombn                |           |
+'---------------------------------------'----------*/
 package main
 
 import "github.com/01-edu/z01"
@@ -12,7 +24,7 @@ func printStr(str string) {
 	z01.PrintRune('\n')
 }
 
-func isEven(nbr int) boolean {
+func isEven(nbr int) bool {
 	if even(nbr%2) == 1 {
 		return true
 	} else {
