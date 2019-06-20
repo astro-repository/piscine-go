@@ -28,10 +28,9 @@ func main() {
 	if len(os.Args) == 1 {
 		file, err := os.Open(os.Args[0])
 		if err != nil {
-			fmt.Println("File name missing")
+			fmt.Println(err)
 		}else{
 			data := make([]byte, 14)
-			fmt.Println(file.Stat())
 			file.Read(data)
 				fmt.Println(string(data))
 			file.Close()
