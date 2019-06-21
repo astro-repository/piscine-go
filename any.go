@@ -14,9 +14,6 @@ package piscine
 
 func Any(f func(string) bool, arr []string) bool {
 	for _, v := range arr {
-		if 48<=v && v <= 57 {
-			return true
-		}
+		f(v)
 	}
-	return false
 }
