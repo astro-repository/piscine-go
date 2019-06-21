@@ -13,7 +13,7 @@
 package piscine
 
 func Map(f func(int) bool, arr []int) []bool {
-	TabRetour := []bool
+	TabRetour := []bool{}
 	for _, v := range arr {
 		tabRetour = append(tabRetour, f(v))
 	}
