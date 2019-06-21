@@ -1,4 +1,4 @@
-package main
+package piscine
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main() {
+func Doop() {
 	if len(os.Args)>=3 {
 		os.Args = os.Args[1:]
 		a, errA := strconv.Atoi(os.Args[0])
