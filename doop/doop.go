@@ -32,7 +32,7 @@ func main() {
 			if b != 0 {
 				fmt.Println(a%b)
 			}else{
-				fmt.Println("No modulo by 0")
+				fmt.Println("No Modulo by 0")
 			}
 		default :
 		fmt.Println(0)
