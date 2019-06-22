@@ -1,7 +1,5 @@
 package piscine
 
-import "fmt"
-
 func Rot14(str string) string {
 	Maj := alphabetMaj()
 	Min := alphabetMin()
