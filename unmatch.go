@@ -1,11 +1,5 @@
 package piscine
 
-func main() {
-	arr := []int{1, 2, 3, 1, 2, 3, 4}
-	unmatch := Unmatch(arr)
-	fmt.Println(unmatch)
-}
-
 func Unmatch(arr []int) int {
 	arrT := Max(arr)
 
