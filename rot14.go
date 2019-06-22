@@ -1,12 +1,6 @@
-package main
+package piscine
 
 import "fmt"
-
-func main() {
-	
-	fmt.Println(Rot14("V 8G8opSMhg41"))
-	
-}
 
 func Rot14(str string) string {
 	Maj := alphabetMaj()
