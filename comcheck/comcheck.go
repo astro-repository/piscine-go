@@ -14,8 +14,6 @@ func main() {
 		}
 		if juge {
 			fmt.Println("Alert!!!")
-		}else{
-			fmt.Println()
 		}
 	}
 }
