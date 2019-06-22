@@ -1,8 +1,14 @@
-package piscine
+package main
+
+import "fmt"
+
+func main()  {
+	fmt.Println(ActiveBits(-5))
+}
 
 func ActiveBits(n int) uint {
 	if n<0 {
-		return -n
+		return uint(-n)
 	}
-	return n
+	return uint(n)
 }
