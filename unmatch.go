@@ -13,7 +13,7 @@ func Unmatch(arr []int) int {
 		table[i] = compteur
 	}
 	for i, v := range table {
-		if v == 1 {
+		if v % 2 != 0 {
 			return arr[i]
 		}
 	}
