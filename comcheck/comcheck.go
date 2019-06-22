@@ -17,8 +17,6 @@ func main() {
 		}else{
 			fmt.Println()
 		}
-	}else{
-		fmt.Println()
 	}
 }
 
