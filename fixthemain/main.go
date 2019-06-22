@@ -14,7 +14,7 @@ func PrintStr(str string) {
 
 func CloseDoor(ptrDoor *Door) {
 	
-	PrintStr("Door Closing...")
+	PrintStr("Door closing...")
 	ptrDoor.state = false
 	// state = CLOSE
 	// return true
