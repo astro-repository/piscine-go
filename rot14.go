@@ -1,6 +1,12 @@
-package piscine
+package main
 
 import "fmt"
+
+func main() {
+	
+	fmt.Println(Rot14("V 8G8opSMhg41"))
+	
+}
 
 func Rot14(str string) string {
 	Maj := alphabetMaj()
@@ -23,9 +29,10 @@ func Rot14(str string) string {
 			fmt.Print(string(hach[13]))
 		}
 
-		if v == ' ' {
-			fmt.Print(" ")
+		if !('A' <= v && v <= 'Z') && !('a' <= v && v <= 'z') {
+			fmt.Printf(string(v))
 		}
+
 	}
 	return ""
 }
