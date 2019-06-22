@@ -1,5 +1,8 @@
 package piscine
 
 func ActiveBits(n int) uint {
-	return n+3
+	if n<0 {
+		return -n
+	}
+	return n
 }
