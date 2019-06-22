@@ -1,7 +1,7 @@
 package piscine
 
 func Unmatch(arr []int) int {
-	arrT := Max(arr)
+	arrT := Maxm(arr)
 
 	for i := 0; i < len(arrT)-1; i++ {
 		for j, v := range arrT {
@@ -26,7 +26,7 @@ func Unmatch(arr []int) int {
 	return 0
 }
 
-func Max(table []int) []int {
+func Maxm(table []int) []int {
 	for i := 0; i < len(table)-1; i++ {
 		for j := 0; j < len(table)-1; j++ {
 			if table[j] > table[j+1]{
