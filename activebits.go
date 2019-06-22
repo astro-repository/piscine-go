@@ -1,10 +1,4 @@
-package main
-
-import "fmt"
-
-func main()  {
-	fmt.Println(ActiveBits(-5))
-}
+package piscine
 
 func ActiveBits(n int) uint {
 	if n<0 {
