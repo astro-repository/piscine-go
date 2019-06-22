@@ -8,9 +8,9 @@ func CollatzCountdown(start int) int {
 func Compteur(compteur int, start int) int {
 	
 	if compteur >= 5000{
-		return 1
+		return -1
 	}
-	
+
 	if start == 1{
 		return compteur
 	}
