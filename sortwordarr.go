@@ -14,10 +14,6 @@ package piscine
 
 import "fmt"
 
-func main() {
-	SortWordArr([]string{"a", "A", "1", "b", "B", "2", "c", "C", "3"})
-}
-
 func SortWordArr(array []string) {
 	narray := []rune{}
 	sarray := []string{}
