@@ -1,5 +1,9 @@
 package main
 
+import "fmt"
+
+const AIRCRAFT1 = 0
+
 type Pilot struct {
 	Name string
 	Life int
@@ -13,7 +17,7 @@ func main() {
 	donnie.Name = "Donnie"
 	donnie.Life = 100.0
 	donnie.Age = 24
-	donnie.Aircraft = student.AIRCRAFT1
+	donnie.Aircraft = AIRCRAFT1
 
 	fmt.Println(donnie)
 }
