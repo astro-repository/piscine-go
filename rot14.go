@@ -28,7 +28,7 @@ func Rot14(str string) string {
 		}
 
 	}
-	return string(chaineF)
+	return ""
 }
 
 func alphabetMaj() []rune  {
