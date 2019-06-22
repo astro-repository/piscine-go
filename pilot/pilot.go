@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-const AIRCRAFT1 = 0
+const AIRCRAFT1 = 1
 
 type Pilot struct {
 	Name string
