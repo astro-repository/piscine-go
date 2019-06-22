@@ -1,16 +1,9 @@
-package main
-
-import "fmt"
-
-func main() {
-	fmt.Println(CollatzCountdown(12))
-}
+package piscine
 
 func CollatzCountdown(start int) int {
 	compteur := 1
 	return Compteur(compteur, start)
 }
-
 
 func Compteur(compteur int, start int) int {
 
