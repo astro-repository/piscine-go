@@ -1,0 +1,46 @@
+package piscine
+
+func main() {
+	arr := []int{1, 2, 3, 1, 2, 3, 4}
+	unmatch := Unmatch(arr)
+	fmt.Println(unmatch)
+}
+
+func Unmatch(arr []int) int {
+	arrT := Max(arr)
+
+	for i := 0; i < len(arrT)-1; i++ {
+		for j, v := range arrT {
+			if arrT[i] == v {
+				arrT[i] = -124524
+				arrT[j] = -124524
+				break
+			}
+
+			if i==len(arrT)-1 {
+				return arrT[i]
+			}
+		}
+	}
+
+	for _, v := range arrT {
+		if v != -124524 {
+			return v
+		}
+	}
+
+	return 0
+}
+
+func Max(table []int) []int {
+	for i := 0; i < len(table)-1; i++ {
+		for j := 0; j < len(table)-1; j++ {
+			if table[j] > table[j+1]{
+				intermediaire := table[j]
+				table[j] = table[j+1]
+				table[j+1] = intermediaire
+			}
+		}
+	}
+	return table
+}
