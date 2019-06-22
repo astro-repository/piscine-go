@@ -6,13 +6,15 @@ func Rot14(str string) string {
 	Maj := alphabetMaj()
 	Min := alphabetMin()
 	strrune := []rune(str)
+	chaineF := []rune{}
+
 	for _, v := range strrune {
 		if 'A' <= v && v <= 'Z' {
 			index := returnIndex(v) + 1
 			sliceMaj := Maj[index:]
 			sliceMajRestant := Maj[:index]
 			hachage := append(sliceMaj,sliceMajRestant...)
-			fmt.Print(string(hachage[13]))
+			chaineF = append(chaineF, hachage[13])
 		}
 		
 		if 'a' <= v && v <= 'z' {
@@ -20,15 +22,15 @@ func Rot14(str string) string {
 			sliceMin := Min[index:]
 			sliceMinRestant := Min[:index]
 			hach := append(sliceMin,sliceMinRestant...)
-			fmt.Print(string(hach[13]))
+			chaineF = append(chaineF, hach[13])
 		}
 
 		if !('A' <= v && v <= 'Z') && !('a' <= v && v <= 'z') {
-			fmt.Printf(string(v))
+			chaineF = append(chaineF, v)
 		}
 
 	}
-	return ""
+	return string(chaineF)
 }
 
 func alphabetMaj() []rune  {
