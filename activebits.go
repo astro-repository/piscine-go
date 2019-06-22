@@ -1,5 +1,7 @@
 package piscine
 
+import "strconv"
+
 func ActiveBits(n int) uint {
 
 	a:= int64(n)
