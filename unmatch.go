@@ -6,8 +6,8 @@ func Unmatch(arr []int) int {
 	for i := 0; i < len(arrT)-1; i++ {
 		for j, v := range arrT {
 			if arrT[i] == v {
-				arrT[i] = nil
-				arrT[j] = nil
+				arrT[i] = 0
+				arrT[j] = 0
 				break
 			}
 
@@ -18,7 +18,7 @@ func Unmatch(arr []int) int {
 	}
 
 	for _, v := range arrT {
-		if v != nil {
+		if v != 0 {
 			return v
 		}
 	}
