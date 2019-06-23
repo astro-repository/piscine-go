@@ -17,4 +17,5 @@ func FindNextPrime(nb int) int {
 		nb++
 		return FindNextPrime(nb)
 	}
+	return 0
 }
