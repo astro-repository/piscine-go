@@ -17,7 +17,7 @@ func isPrime(nb int) bool{
 }
 
 func FindNextPrime(nb int) int {
-	if nb < 100 && 0 < nb{
+	if nb < 1000000094 && 0 < nb{
 		if isPrime(nb){
 			return nb
 		}else{
