@@ -21,6 +21,7 @@ func FindNextPrime(nb int) int {
 		if isPrime(nb){
 			return nb
 		}else{
+			nb++
 			for !isPrime(nb) {
 				nb++
 				FindNextPrime(nb)
