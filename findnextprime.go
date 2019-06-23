@@ -1,7 +1,5 @@
 package piscine
 
-import "math"
-
 func isPrime(nb int) bool{
 	compteur := 0
 		for i := 1; i <= nb; i++ {
