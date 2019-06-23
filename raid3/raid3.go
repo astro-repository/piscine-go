@@ -47,9 +47,9 @@ func main(){
 				3:"[raid1d]",
 				4:"[raid1e]",
 			}
-			fmt.Print("TabAssociatif :\n",tabAssociatif)
-			fmt.Println()
-			fmt.Println("isExist -->",isExist(os.Args[0], param1, param2))
+			// fmt.Print("TabAssociatif :\n",tabAssociatif)
+			// fmt.Println()
+			// fmt.Println("isExist -->",isExist(os.Args[0], param1, param2))
 			listFonction := []string{}
 
 			for i, v := range tabAssociatif{
