@@ -1,20 +1,35 @@
 package piscine
 
-func FindNextPrime(nb int) int{
+import "math"
+
+func isPrime(nb int) bool{
 	compteur := 0
-	if nb > 123457 {
-		return 0
+		for i := 1; i <= nb; i++ {
+			if nb % i == 0{
+				compteur++
+			}
+			if compteur == 2 && i==nb {
+				return true
+			}
+			if compteur == 2 && i!=nb {
+				return false
+			}
 	}
-	for i := 1; i <= nb; i++ {
-		if nb % i == 0{
-			compteur++
-		}
-		if compteur == 2 && i==nb {
+	return false
+}
+
+func FindNextPrime(nb int) int {
+	if nb < math.MaxInt32{
+		if isPrime(nb){
+			return nb
+		}else{
+			for !isPrime(nb) && (nb <= math.MaxInt32) {
+				nb++
+				FindNextPrime(nb)
+			}
 			return nb
 		}
-		if compteur == 2 && i!=nb{
-			return FindNextPrime(nb+1)
-		}
+	}else{
+		return 0
 	}
-	return 0
 }
