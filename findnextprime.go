@@ -19,7 +19,7 @@ func isPrime(nb int) bool{
 }
 
 func FindNextPrime(nb int) int {
-	if nb < math.MaxInt32 && 0 < nb{
+	if nb < 100 && 0 < nb{
 		if isPrime(nb){
 			return nb
 		}else{
