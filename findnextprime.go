@@ -1,7 +1,5 @@
 package piscine
 
-import "math"
-
 func isPrime(nb int) bool{
 	compteur := 0
 		for i := 1; i <= nb; i++ {
@@ -19,7 +17,7 @@ func isPrime(nb int) bool{
 }
 
 func FindNextPrime(nb int) int {
-	if nb < math.MaxInt32{
+	if nb < 1000{
 		if isPrime(nb){
 			return nb
 		}else{
