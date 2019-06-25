@@ -2,10 +2,6 @@ package piscine
 
 import "fmt"
 
-func main() {
-	PrintNbrBase(-125,"01")
-}
-
 func PrintNbrBase(nbr int, base string) {
 	if nbr<0 {
 		fmt.Printf("-")
