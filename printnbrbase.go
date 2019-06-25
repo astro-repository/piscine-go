@@ -14,7 +14,7 @@ package piscine
 
 import "fmt"
 
-func PrintNbrBase(nbr int, base string) {
+func PrintNbrBase(nbr int, base string) () {
 	
 	
 	a := pVerification{
