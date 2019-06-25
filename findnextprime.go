@@ -34,7 +34,7 @@ func isNextPrime(nb,appel int) bool{
 }
 
 func FindNextPrime(nb int) int {
-	if nb < 19000000{
+	if nb < 1000000094{
 		if isPrime(nb){
 			return nb
 		}else{
