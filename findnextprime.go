@@ -42,7 +42,7 @@ func FindNextPrime(nb int) int {
 			for !isPrime(nb) {
 				i++
 				nb++
-				if i > 114 {
+				if i > 20 {
 					return 2
 				}
 				isNextPrime(nb,i)
