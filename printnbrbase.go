@@ -1,12 +1,21 @@
+/*--------------------------------------------------.
+|     **      ******  ********  *******     ****    |
+|  **    **  *.          **     **   **   **    **  |
+|  **    **     ***.     **     ** ***    **    **  |
+|  ********  *      *    **     **   **   **    **  |
+|  **    **   ******     **     **   **     ****    |
+|---------------------------------------.           |
+|          ZONE-01 (cedrick777)         |           |
+|---------------------------------------|           |
+|  NOM : TOURE Ahmed Christian Cédrick  |           |
+|  QUEST 05 : printnbrbase              |           |
+'---------------------------------------'----------*/
 package piscine
 
 import "fmt"
 
 func PrintNbrBase(nbr int, base string) {
-	if nbr<0 {
-		fmt.Printf("-")
-		nbr = -nbr
-	}
+	
 	
 	a := pVerification{
 		nbr : nbr,
@@ -14,6 +23,10 @@ func PrintNbrBase(nbr int, base string) {
 	}
 	tab:=[]int{}
 
+	if nbr<0 && verification(&a){
+		fmt.Printf("-")
+		a.nbr = -a.nbr
+	}
 	if verification(&a) {
 		tab = append(tab, a.nbr % len(a.base))
 		for int(a.nbr / len(a.base))> 0 {
@@ -46,6 +59,8 @@ func verification(a *pVerification) bool {
 				}
 			}
 		}
+	}else{
+		return false
 	}
 	return true
 }
