@@ -10,7 +10,7 @@
 |  NOM : TOURE Ahmed Christian Cédrick  |           |
 |  QUEST 11 : listpushback              |           |
 '---------------------------------------'----------*/
-package main
+package piscine
 
 func CountIf(f func(string) bool, tab []string) int {
 	compteur := 0
