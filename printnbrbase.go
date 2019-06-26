@@ -33,7 +33,7 @@ func PrintNbrBase(nbr int, base string) () {
 		}
 
 		for i := len(tab)-1; 0 <= i; i-- {
-			fmt.Printf(string(base[tab[i]]))
+			fmt.Printf(string(a.base[tab[i]]))
 		}
 	}else{
 		fmt.Printf("NV")
@@ -46,7 +46,7 @@ type pVerification struct {
 }
 
 func verification(a *pVerification) bool {
-	if len(a.base) >= 2 && len(a.base)<= 100 {
+	if len(a.base) >= 2 && len(a.base) <= 16 {
 		for i, V := range a.base {
 			if V == '+' || V == '-' {
 				return false
