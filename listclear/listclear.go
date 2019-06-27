@@ -1,4 +1,4 @@
-package piscine
+package main
 
 func ListClear(link *List) {
 	for link.Head != nil {
