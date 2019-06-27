@@ -1,21 +1,4 @@
-package main
-
-import "fmt"
-
-func main() {
-
-	link := &List{}
-
-	ListPushFront(link, "Hello")
-	ListPushFront(link, "man")
-	ListPushFront(link, "how are you")
-
-	it := link.Head
-	for it != nil {
-		fmt.Println(it.Data)
-		it = it.Next
-	}
-}
+package piscine
 
 type NodeL struct {
 	Data interface{}
