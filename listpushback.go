@@ -12,8 +12,6 @@
 '---------------------------------------'----------*/
 package piscine
 
-import "fmt"
-
 type NodeL struct {
 	Data interface{}
 	Next *NodeL
