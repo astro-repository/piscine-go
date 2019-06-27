@@ -21,5 +21,5 @@ func ListLast(link *List) interface{} {
 		link.Head = link.Head.Next
 	}
 
-	return link.Head
+	return link.Tail
 }
