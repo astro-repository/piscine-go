@@ -12,12 +12,30 @@
 '---------------------------------------'----------*/
 package piscine
 
-func CountIf(f func(string) bool, tab []string) int {
-	compteur := 0
-	for _, v := range tab {
-		if f(v) {
-			compteur++
+import "fmt"
+
+type NodeL struct {
+	Data interface{}
+	Next *NodeL
+}
+
+type List struct {
+	Head *NodeL
+	Tail *NodeL
+}
+
+func ListPushBack(link *List, data interface{}) {
+
+	n:=&NodeL{Data:data}
+	if link.Head == nil {
+		link.Head = n
+	}else{
+		for i := link.Head; i != nil; i = i.Next {
+			if i.Next == nil {
+				i.Next = n
+				break
+			}
 		}
 	}
-	return compteur
+
 }
